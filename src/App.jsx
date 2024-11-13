@@ -1,7 +1,15 @@
-// src/App.jsx
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'   //I found the BrowserRouter helps
+import Header from './components/Header'
+import Main from './components/Main'
 
-const App = () => {
-  return <h1>Hello world!</h1>;
-};
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Main />
+    </Router>
+  )
+}
 
-export default App;
+export default App
